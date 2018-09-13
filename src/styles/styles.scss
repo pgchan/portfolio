@@ -1,0 +1,14 @@
+@import 'partials/setup';
+@import 'partials/header';
+@import 'partials/footer';
+
+body {
+    box-sizing: border-box;
+    text-transform: capitalize;
+    background: lightgrey;
+    margin: 0 auto;
+}
+.wrapper {
+    max-width: 1140px;
+    padding: 0 1%;
+}
