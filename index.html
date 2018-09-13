@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Pratik's Portfolio Page</title>
 </head>
 <body>
-    <nav>
+    <nav class="wrapper">
         <div>LOGO</div>
         <ul class="nav__menu">
             <li class="nav__menu__item"><a href="#">home</a></li>
@@ -19,7 +20,7 @@
         </ul>
     </nav>
 
-    <section>
+    <section class="welcome">
         <article>
             <h1>hi i am pratik gauchan</h1>
             <h3>web developer</h3>
@@ -28,65 +29,117 @@
     </section>
 
     <section class="about">
-        <h2>hello</h2>
-        <h4>i am a web developer</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum tempore labore beatae accusantium cupiditate a! Consectetur omnis iste ipsam quis rem quae facilis, minus dolorem aut at sequi animi non?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eveniet natus consequuntur ex tempore consequatur mollitia! Eveniet soluta harum reprehenderit repudiandae nisi! Quam deserunt praesentium rem in inventore, ipsa cumque.</p>
-        <p><a href="#">contact me</a></p>
-
+        <article class="about__inner wrapper">
+            <div class="about__image">
+            </div>
+            
+            <div class="about__content">
+                <h2>hello</h2>
+                <h4>i am a web developer</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum tempore labore beatae accusantium cupiditate a! Consectetur omnis iste ipsam quis rem quae facilis, minus dolorem aut at sequi animi non?</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eveniet natus consequuntur ex tempore consequatur mollitia! Eveniet soluta harum reprehenderit repudiandae nisi! Quam deserunt praesentium rem in inventore, ipsa cumque.</p>
+                <p><a href="#">contact me</a></p>
+            </div>
+        </article>
     </section>
 
 
     <section class="skills">
-        <h3 class="section__header"></h3>
+        <article class="skills__inner wrapper">
+            <h3 class="section__header">skills</h3>
+            <div class="skills__logo">
+                <figure class="skills__logo__individual">
+                    <i class="devicon-html5-plain"></i>
+                </figure>
+                <figure class="skills__logo__individual">
+                    <i class="devicon-css3-plain"></i>
+                </figure>
+                <figure class="skills__logo__individual">
+                    <i class="devicon-javascript-plain"></i>
+                </figure>
+                <figure class="skills__logo__individual">
+                    <i class="devicon-git-plain"></i>
+                </figure>
+                <figure class="skills__logo__individual">
+                    <i class="devicon-github-plain"></i>
+                </figure>
+                <figure class="skills__logo__individual">
+                    <i class="devicon-sass-original"></i>
+                </figure>
+                <figure class="skills__logo__individual">
+                    <i class="devicon-react-original"></i>
+                </figure>
+                <figure class="skills__logo__individual">
+                    <i class="devicon-jquery-plain"></i>
+                </figure>
+                <figure class="skills__logo__individual">
+                    <i class="devicon-gulp-plain"></i>
+                </figure>
+                <figure class="skills__logo__individual">
+                    <i class="devicon-visualstudio-plain"></i>
+                </figure>
+                </div>
+            </figure>
+        </article>
     </section>
 
     <section class="portfolio">
-        <h3 class="section__header">recent work</h3>
+        <article class="portfolio__inner wrapper">
+            <h3 class="section__header">recent work</h3>
+            <article class="portfolio__container">
+                <div class="portfolio__individual">
+                    <div class="portfolio__image"></div>
+                    <div class="portfolio__description">
+                        <h4 class="portfolio__title">portfolio title</h4>
+                        <p class="portfolio__details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore vero perferendis dolorum consequatur nesciunt aliquid hic ex libero ullam, consequuntur debitis nisi repudiandae officia corrupti reiciendis. Voluptatem, magni quis.</p>
+                    </div>
+                </div>
+        </article>
     </section>
 
     <section class="contact">
-        <h3 class="section__header">get in touch</h3>
-        <form action="" class="contact__form">
-            <input type="text" id="name" placeholder="name">
-            <label for="name">name</label>
-            <input type="text" id="e-mail" placeholder="e-mail">
-            <label for="e-mail">e-mail</label>
-            <input type="text" id="subject" placeholder="subject">
-            <label for="subject">subject</label>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
-            <label for="message">message</label>
-            <button class=""></button>
-        </form>
-        <article class="contact__info">
-            <h3 class="contact__info__header">contact me</h3>
-            <p class="contact__info__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos aspernatur. Rem quod odit fugiat recusandae. Debitis, placeat at! Sequi libero et tempora quisquam cumque rem in a ducimus reprehenderit!</p>
-            <div class="contact__details__container">
-                <div class="contact__details__innerContainer">
-                    <div class="contact__details__logo">logo</div>
-                    
-                    <div class="contact__details__info">
-                        <h4>location</h4>
-                        <p>toronto</p>
+        <article class="contact__inner wrapper">
+            <h3 class="section__header contact__header">get in touch</h3>
+            <form action="" class="contact__form">
+                <input type="text" id="name" placeholder="name">
+                <label for="name">name</label>
+                <input type="text" id="e-mail" placeholder="e-mail">
+                <label for="e-mail">e-mail</label>
+                <input type="text" id="subject" placeholder="subject">
+                <label for="subject">subject</label>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="message"></textarea>
+                <label for="message">message</label>
+                <a href="#">send message</a>
+            </form>
+            <article class="contact__info">
+                <h3 class="contact__info__header">contact me</h3>
+                <p class="contact__info__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos aspernatur. Rem quod odit fugiat recusandae. Debitis, placeat at! Sequi libero et tempora quisquam cumque rem in a ducimus reprehenderit!</p>
+                <div class="contact__details__container">
+                    <div class="contact__details__innerContainer">
+                        <div class="contact__details__logo">logo</div>
+                        <div class="contact__details__info">
+                            <h4>location</h4>
+                            <p>toronto</p>
+                        </div>
+                    </div>
+                        
+                    <div class="contact__details__innerContainer">
+                        <div class="contact__details__logo">logo</div>
+                        <div class="contact__details__info">
+                            <h4>phone</h4>
+                            <p>+1 123 456 7890</p>
+                        </div>
+                    </div>
+                        
+                    <div class="contact__details__innerContainer">
+                        <div class="contact__details__logo">logo</div>
+                        <div class="contact__details__info">
+                            <h4>e-mail</h4>
+                            <p>email@email.com</p>
+                        </div>
                     </div>
                 </div>
-                    
-                <div class="contact__details__innerContainer">
-                    <div class="contact__details__logo">logo</div>
-                    <div class="contact__details__info">
-                        <h4>phone</h4>
-                        <p>+1 123 456 7890</p>
-                    </div>
-                </div>
-                    
-                <div class="contact__details__innerContainer">
-                    <div class="contact__details__logo">logo</div>
-                    <div class="contact__details__info">
-                        <h4>e-mail</h4>
-                        <p>email@email.com</p>
-                    </div>
-                </div>
-            </div>
+            </article>
         </article>
     </section>
 
