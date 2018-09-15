@@ -3,7 +3,7 @@
 @import 'partials/footer';
 
 * {
-    margin: 0 auto;
+    // margin: 0 auto;
 }
 
 body {
@@ -19,6 +19,20 @@ body {
 
 section{padding: 50px 0;}
 
+.nav {
+    &__inner {
+        display: flex;
+        position: relative;
+    }
+    &__menu {
+        display: flex;
+        &__item {padding: 0 10%}
+    }
+}
+
+
+
+
 .welcome {
     display: grid;
     grid-template-columns: 1fr;
@@ -26,19 +40,35 @@ section{padding: 50px 0;}
     align-items: center;
     justify-items: center;
     background: lightgrey;
+
+    // background-image: url("https://instagram.fybz2-2.fna.fbcdn.net/vp/730907dccb697026595c1ae8b25e9150/5C2B538F/t51.2885-15/e35/12120526_1656438827975408_197803653_n.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    // color: #fff;
 }
 
 .about {
     &__inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+    }
+    &__image{
+        background: url("/src/styles/assets/candid.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 400px;
     }
 }
 
 
 .skills {
     background: lightgrey;
-    &__inner {display: grid;}
+    &__inner {
+        display: grid;
+        margin: 0 auto;
+    }
     &__logo {
         display: grid;
         justify-items: center;
@@ -46,6 +76,7 @@ section{padding: 50px 0;}
         &__individual {
             font-size: 5rem;
             margin: 20px;
+            & svg {height: 100px}
         }
     }
 }
@@ -55,33 +86,55 @@ section{padding: 50px 0;}
     &__inner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
     }
     &__header{
-        // grid-column-start: 1;
-        // grid-column-end: 3;
-        // grid-row-start: 1;
-        // grid-row-end: 1;
         grid-column-start: 1;
         grid-column-end: 3;
     }
-    &__form{display: grid;}
-    &__info{display: grid;}
+    &__form{
+        display: grid;
+        padding: 10px;
+        & input {
+            border: none;
+            border-bottom: 1px solid black;
+        }
+    }
+
+    &__input__container {
+        position: relative;
+        // & label {position: absolute;}
+    }
+
+    &__info{
+        display: grid;
+        padding: 10px;
+    }
+
+}
+
+.contact__input__container input {
+    width: 100%
 }
 
 .portfolio {
-    &__inner{display: grid;}
-    // &__container {display: grid}
-
+    &__inner{
+        display: grid;
+        margin: 0 auto;}
+    &__image{
+        background: url("/src/styles/assets/mbp.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 400px;
+    }
 }
 
 .portfolio__individual {
     display: grid;
-    &__image{}
-    &__details{}
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px 0;
+
 }
-
-
-
 
 
     // <section class="portfolio wrapper">
@@ -94,3 +147,5 @@ section{padding: 50px 0;}
     //                 <p class="portfolio__details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore vero perferendis dolorum consequatur nesciunt aliquid hic ex libero ullam, consequuntur debitis nisi repudiandae officia corrupti reiciendis. Voluptatem, magni quis.</p>
     //             </div>
     //         </div>
+
+
