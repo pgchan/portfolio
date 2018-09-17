@@ -1,36 +1,61 @@
 @import 'partials/setup';
 @import 'partials/header';
 @import 'partials/footer';
+@import 'partials/typography';
 
-* {
-    // margin: 0 auto;
-}
+// * {
+//     // margin: 0 auto;
+// }
 
 body {
     box-sizing: border-box;
     text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
     // background: lightgrey;
     // margin: 0 auto;
 }
+
 .wrapper {
     max-width: 1140px;
-    // padding: 0 1%;
+    padding: 0 2%;
 }
 
-section{padding: 50px 0;}
+a {text-decoration: none;}
+a:visited {color: #000;}
+section{padding: 60px 0;}
+ul {list-style: none;}
+
+.section__header{
+    margin: 0 auto;
+    border-bottom: 1px solid grey;
+}
 
 .nav {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 0;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);
     &__inner {
+        margin: 0 auto;
         display: flex;
-        position: relative;
+        justify-content: space-between;
     }
+    &__logo {
+        // flex-basis: 30%;
+        & h2 {margin: 11px 0;}}
     &__menu {
         display: flex;
-        &__item {padding: 0 10%}
+        padding-left: 0;
+        // flex: 1;
+        // justify-content: flex-end;
+
+        & li {
+            // margin-right: 20%;
+            padding-left: 30px;
+        }
     }
 }
-
-
 
 
 .welcome {
@@ -50,15 +75,31 @@ section{padding: 50px 0;}
 
 .about {
     &__inner {
+        margin: 0 auto;
+        max-width: 900px;
+        display: flex;
+        align-items: center;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin: 0 auto;
+        padding: 50px;
+        grid-gap: 50px;
+        // justify-items: center;
+        // align-items: center;
     }
-    &__image{
-        background: url("/src/styles/assets/candid.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 400px;
+    &__image img {
+        max-width: 100%;
+
+        // &__container{
+        // background: url("/src/styles/assets/profilePic.jpg");
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        // height: 300px;
+        // flex: 1
+        // margin: 0 27%;
+        // }
+    }
+    &__content {
+        // flex: 1;
     }
 }
 
@@ -75,8 +116,14 @@ section{padding: 50px 0;}
         grid-template-columns: repeat(4, 1fr);
         &__individual {
             font-size: 5rem;
-            margin: 20px;
-            & svg {height: 100px}
+            margin: 10px;
+            & svg {
+                height: 100px;}
+                // color: black}
+            & svg:hover {
+                transform: scale(1.4);
+                transition: 0.6s;
+            }
         }
     }
 }
@@ -85,12 +132,11 @@ section{padding: 50px 0;}
     background: lightgrey;
     &__inner {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        // grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
     }
     &__header{
         grid-column-start: 1;
-        grid-column-end: 3;
     }
     &__form{
         display: grid;
@@ -118,34 +164,122 @@ section{padding: 50px 0;}
 }
 
 .portfolio {
-    &__inner{
-        display: grid;
-        margin: 0 auto;}
-    &__image{
-        background: url("/src/styles/assets/mbp.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        height: 400px;
+    &__inner {margin: 0 auto}
+    &__individual {
+        display: flex;
+        margin: 5% 0;
+        border: 1px solid lightgrey;
+        align-items: center;
+        &:hover {box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.2);}
+    }
+    // &__image {
+    //     background: url("/src/styles/assets/mbp.png");
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     height: 400px;
+    //     flex: 1;}
+    &__image {
+        flex: 1;
+        padding: 2%;
+        & img {max-width: 100%}
+    }
+    &__description {
+        flex: 1;
+        padding: 2%}
+    &__title {font-size: 2rem;}
+    &__skills {
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        & li {
+            margin-right: 10px;
+            margin-top: 10px;
+            border: 1px solid lightgrey;
+            padding: 5px;
+            text-transform: uppercase;
+        }
+    }
+    &__reverse {flex-direction: row-reverse}
+    &__links {
+        display: flex;
+        // align-items: center;
+        &__live {
+            margin-right: 15px;
+            border: 1px solid black;
+            padding: 5px 10px;
+            &:hover { 
+                background: #000;
+                color: #fff;
+                transition: 0.3s;
+            }
+        }
+        &__github {
+            font-size: 1.8rem;
+            &:hover {
+                background: #000;
+                border-radius: 18px;
+                color: #fff; 
+                transition: 0.3s;   
+            }
+        }
     }
 }
 
-.portfolio__individual {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 30px 0;
+
+
+
+
+// MEDIA QUERIES //
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    .about {
+        &__inner {grid-template-columns: 1fr;}
+        &__image {
+            text-align: center;
+            & img {max-width: 60%;}
+        }
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .wrapper {padding: 0 5%;}
+    .about__image img {max-width: 80%}
+    .portfolio__individual {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 30px 0;
+    }
+    .skills__logo {
+        grid-template-columns: repeat(3, 1fr);
+        &__individual svg {height: 90px;}
+    }
+}
+
+
+
+@media only screen and (max-width: 650px) {
+    .about__image img {max-width: 70%}
 
 }
 
 
-    // <section class="portfolio wrapper">
-    //     <h3 class="section__header">recent work</h3>
-    //     <article class="portfolio__container">
-    //         <div class="portfolio__one">
-    //             <div class="portfolio__image"></div>
-    //             <div class="portfolio__description">
-    //                 <h4 class="portfolio__title">portfolio title</h4>
-    //                 <p class="portfolio__details">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis inventore vero perferendis dolorum consequatur nesciunt aliquid hic ex libero ullam, consequuntur debitis nisi repudiandae officia corrupti reiciendis. Voluptatem, magni quis.</p>
-    //             </div>
-    //         </div>
+@media only screen and (max-width: 550px) {
+    .nav__menu li {
+        padding-left: 11px;
+    }
+}
 
-
+@media only screen and (max-width: 400px) {
+    .welcome__content{
+        text-align: center;
+        padding: 0 10px;}
+    .nav__meni li {padding-left: 8px;}
+    .about__image img {max-width: 100%}
+    .nav__menu__item:first-child {display: none;}
+    .skills__logo__individual svg {height: 70px;}
+}
