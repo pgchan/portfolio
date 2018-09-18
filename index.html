@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <title>Pratik's Portfolio Page</title>
+    <link rel="shortcut icon" type="image/png" href="/src/styles/assets/logo.png">
+    <title>Pratik Gauchan</title>
 </head>
 <body>
     <section class="nav">
@@ -20,7 +21,7 @@
             <nav>
                 <ul class="nav__menu">
                     <li class="nav__menu__item">
-                        <a href="#" class="nav__menu__link">home</a>
+                        <a href="#welcome" class="nav__menu__link">home</a>
                     </li>
                     <li class="nav__menu__item">
                         <a href="#about" class="nav__menu__link">about</a>
@@ -39,9 +40,11 @@
         </article>
     </section>
 
-    <section class="welcome">
+    <section id="welcome" class="welcome">
         <article class="welcome__content">
-            <h1>hi i am pratik gauchan</h1>
+            <!-- <h1><span class="welcome__name__before">hi i am </span><span class="welcome__name">pratik gauchan</span></h1>
+            <h3>web developer</h3> -->
+            <h1><span class="welcome__name">pratik gauchan</span></h1>
             <h3>web developer</h3>
         </article>
     </section>
@@ -49,7 +52,7 @@
     <section id="about" class="about">
         <article class="about__inner wrapper">
             <figure class="about__image">
-                <img src="/src/styles/assets/profilePic.jpg" alt="">
+                <img src="/src/styles/assets/profile.jpg" alt="Close up photo">
             </figure>
             <div class="about__content">
                 <h2>hello</h2>
@@ -57,7 +60,7 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum tempore labore beatae accusantium cupiditate a! Consectetur omnis iste ipsam quis rem quae facilis, minus dolorem aut at sequi animi non?</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam eveniet natus consequuntur ex tempore consequatur mollitia! Eveniet soluta harum reprehenderit repudiandae nisi! Quam deserunt praesentium rem in inventore, ipsa cumque.</p>
                 <ul class="about__social">
-                    <li class="about__social__individual">
+                    <!-- <li class="about__social__individual">
                         <a href="https://twitter.com/pratik_gauchan" target="_blank">
                             <i class="fab fa-twitter about__social__twitter"></i>
                         </a>
@@ -71,7 +74,7 @@
                         <a href="#" target="_blank">
                             <i class="fab fa-linkedin-in about__social__linkedIn"></i>
                         </a>
-                    </li>
+                    </li> -->
                 </ul>
             </div>
         </article>
@@ -129,10 +132,6 @@
                 </figure>
                 <figure class="skills__logo__individual">
                     <i class="devicon-react-original colored"></i>
-                    <!-- <svg viewBox="0 0 128 128">
-                        <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3-12.5 4.8-19.3 11.4-19.3 18.8s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zm-14.8-30.5c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zm-11.2 59.3c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zm-25.6 27.1c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zm25.6-27.1c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zm-54.5-16.2c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zm-24.7 29c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5-13.8-4-22.1-10-22.1-15.6zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zm60.8-20.3c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path>
-                    </svg> -->
-
                 </figure>
                 <figure class="skills__logo__individual">
                     <!-- <i class="devicon-jquery-plain"></i> -->
@@ -147,14 +146,10 @@
                 </figure>
                 <figure class="skills__logo__individual">
                     <i class="devicon-visualstudio-plain colored"></i>
-                    <!-- <svg viewBox="0 0 128 128">
-                        <path class="a" d="M95 2.3l30.5 12.3v98.7L94.8 125.7 45.8 77l-31 24.1L2.5 94.9V33.1l12.3-5.9 31 24.3ZM14.8 45.7V83.2l18.5-19Zm48.1 18.5L94.8 89.3V39Z"></path>
-                    </svg> -->
                 </figure>
                 <figure class="skills__logo__individual skills__logo__png">
                     <img src="/src/styles/assets/firebaseApp.png" alt="firebase app logo">
                 </figure>
-
                 <figure class="skills__logo__individual skills__logo__png">
                     <img src="/src/styles/assets/lightroomLogo.png" alt="Adobe Lightroom Logo">
                 </figure>
@@ -169,12 +164,13 @@
             <article class="portfolio__container">
                 <div class="portfolio__individual">
                     <figure class="portfolio__image">
-                        <img src="/src/styles/assets/newsApp.png" alt="">
+                        <a href="https://newuploadproject.firebaseapp.com/" target="_blank">
+                            <img src="/src/styles/assets/newsApp.png" alt="Image of a macbook with the news app in the monitor">
+                        </a>
                     </figure>
                     <div class="portfolio__description">
                         <h3 class="portfolio__title">NEWS APP</h3>
-                        <p class="portfolio__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem cumque, sed iusto rerum, consequatur dolore velit
-                        nihil officiis placeat natus voluptatem deleniti molestiae labore minus repellendus sapiente eveniet magnam?</p>
+                        <p class="portfolio__details">React app that displays the latest news pulled from an api and lets users view various sections.</p>
                         <ul class="portfolio__skills">
                             <li>react</li>
                             <li>api</li>
@@ -184,19 +180,20 @@
                             <li>responsive</li>
                         </ul>
                         <div class="portfolio__links">
-                            <a class="portfolio__links__live" href="#">see it live</a>
-                            <a class="portfolio__links__github" href="#"><i class="devicon-github-plain portfolio__links__github__logo"></i></a>
+                            <a class="portfolio__links__live" href="https://newuploadproject.firebaseapp.com/" target="_blank">see it live</a>
+                            <a class="portfolio__links__github" href="https://github.com/pgchan/pratik_gauchan_project5" target="_blank"><i class="devicon-github-plain portfolio__links__github__logo" ></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__individual portfolio__reverse">
                     <figure class="portfolio__image">
-                        <img src="/src/styles/assets/hotBlockApp.png" alt="">
+                        <a href="https://hotblock-eb3ba.firebaseapp.com/" target="_blank">
+                            <img src="/src/styles/assets/hotBlockApp.png" alt="Image of a macbook with the hot block app in the monitor">
+                        </a>
                     </figure>
                     <div class="portfolio__description">
                         <h3 class="portfolio__title">HOT BLOCK</h3>
-                        <p class="portfolio__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem cumque, sed iusto rerum, consequatur dolore velit
-                        nihil officiis placeat natus voluptatem deleniti molestiae labore minus repellendus sapiente eveniet magnam?</p>
+                        <p class="portfolio__details">React app that gathers data from Toronto Public Libraries, Ticketmaster API, rates a user's submitted address as cool or not while displaying all the concerts and library events within a 4km radius. </p>
                         <ul class="portfolio__skills">
                             <li>react</li>
                             <li>apis</li>
@@ -204,21 +201,21 @@
                             <li>gulp</li>
                             <li>scss</li>
                             <li>responsive</li>
+                            <li>group programming</li>
                         </ul>
                         <div class="portfolio__links">
-                            <a class="portfolio__links__live" href="#">see it live</a>
-                            <a class="portfolio__links__github" href="#"><i class="devicon-github-plain portfolio__links__github__logo"></i></a>
+                            <a class="portfolio__links__live" href="https://hotblock-eb3ba.firebaseapp.com/" target="_blank">see it live</a>
+                            <a class="portfolio__links__github" href="https://github.com/pgchan/neighbourhoodCoolnessJudger" target="_blank"><i class="devicon-github-plain portfolio__links__github__logo"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__individual">
                     <figure class="portfolio__image">
-                        <a href="www.google.com" target="_blank"><img class="recipeApp" src="/src/styles/assets/recipeApp.png" alt=""></a>   
+                        <a href="http://pgauchan.com/recipeGeneratorApp/" target="_blank"><img class="recipeApp" src="/src/styles/assets/recipeApp.png" alt="Image of a macbook with the recipe app in the monitor"></a>   
                     </figure>
                     <div class="portfolio__description">
                         <h3 class="portfolio__title">RECIPE APP</h3>
-                        <p class="portfolio__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem cumque, sed iusto rerum, consequatur dolore velit
-                        nihil officiis placeat natus voluptatem deleniti molestiae labore minus repellendus sapiente eveniet magnam?</p>
+                        <p class="portfolio__details">JavaScript/Jquery app that gathers recipes from Yummly API and displays them depending on the user's searched recipes/ingredients.</p>
                         <ul class="portfolio__skills">
                             <li>javascript</li>
                             <li>jquery</li>
@@ -226,22 +223,23 @@
                             <li>gulp</li>
                             <li>scss</li>
                             <li>responsive</li>
+                            <li>pair programming</li>
                         </ul>
                         <div class="portfolio__links">
-                            <a class="portfolio__links__live" href="#">see it live</a>
-                            <a class="portfolio__links__github" href="#"><i class="devicon-github-plain portfolio__links__github__logo"></i></a>
+                            <a class="portfolio__links__live" href="http://pgauchan.com/recipeGeneratorApp/" target="_blank">see it live</a>
+                            <a class="portfolio__links__github" href="https://github.com/pgchan/christopher-pratik-project4" target="_blank"><i class="devicon-github-plain portfolio__links__github__logo"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__individual portfolio__reverse">
                     <figure class="portfolio__image">
-                        <img src="/src/styles/assets/pizzaMaker.png" alt="">
+                        <a href="http://pgauchan.com/pizzaMakerApp/" target="_blank">
+                            <img src="/src/styles/assets/pizzaMaker.png" alt="Image of a macbook with the pizza maker app in the monitor">
+                        </a>
                     </figure>
                     <div class="portfolio__description">
                         <h3 class="portfolio__title">PIZZA MAKER</h3>
-                        <p class="portfolio__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem cumque, sed
-                            iusto rerum, consequatur dolore velit nihil officiis placeat natus voluptatem deleniti molestiae labore
-                            minus repellendus sapiente eveniet magnam?</p>
+                        <p class="portfolio__details">JavaScript/Jquery app that allows a user to select his/her own toppings and dynamically adds the price. </p>
                         <ul class="portfolio__skills">
                             <li>javascript</li>
                             <li>jquery</li>
@@ -249,35 +247,35 @@
                             <li>responsive</li>
                         </ul>
                         <div class="portfolio__links">
-                            <a class="portfolio__links__live" href="#">see it live</a>
-                            <a class="portfolio__links__github" href="#"><i class="devicon-github-plain portfolio__links__github__logo"></i></a>
+                            <a class="portfolio__links__live" href="http://pgauchan.com/pizzaMakerApp/" target="_blank">see it live</a>
+                            <a class="portfolio__links__github" href="https://github.com/pgchan/pratikGauchanProjectThree" target="_blank"><i class="devicon-github-plain portfolio__links__github__logo" target="_blank"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio__individual">
                     <figure class="portfolio__image">
-                        <img src="/src/styles/assets/psdConversion.png" alt="">
+                        <a href="http://pgauchan.com/psdConversion/" target="_blank">
+                            <img src="/src/styles/assets/psdConversion.png" alt="Image of a macbook computer with the psd conversion website in the monitor">
+                        </a>
                     </figure>
                     <div class="portfolio__description">
                         <h3 class="portfolio__title">PSD CONVERSION</h3>
-                        <p class="portfolio__details">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum rem cumque, sed
-                            iusto rerum, consequatur dolore velit
-                            nihil officiis placeat natus voluptatem deleniti molestiae labore minus repellendus sapiente eveniet
-                            magnam?</p>
+                        <p class="portfolio__details">Single page responsive website created from a psd template.</p>
                         <ul class="portfolio__skills">
                             <li>html5</li>
                             <li>css3</li>
                             <li>responsive</li>
                         </ul>
                         <div class="portfolio__links">
-                            <a class="portfolio__links__live" href="#">see it live</a>
-                            <a class="portfolio__links__github" href="#"><i class="devicon-github-plain portfolio__links__github__logo"></i></a>
+                            <a class="portfolio__links__live" href="http://pgauchan.com/psdConversion/" target="_blank">see it live</a>
+                            <a class="portfolio__links__github" href="https://github.com/pgchan/pratikGauchanProjectTwo" target="_blank"><i class="devicon-github-plain portfolio__links__github__logo"></i></a>
                         </div>
                     </div>
                 </div>
             </article>
         </article>
     </section>
+
     <section id="contact" class="contact">
         <article class="contact__inner wrapper">
             <h3 class="section__header contact__header">get in touch</h3>
@@ -306,7 +304,7 @@
                 
                 <input type="submit">
             </form> -->
-            <article class="contact__info">
+            <!-- <article class="contact__info">
                 <h3 class="contact__info__header">contact me</h3>
                 <p class="contact__info__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos aspernatur. Rem quod odit fugiat recusandae. Debitis, placeat at! Sequi libero et tempora quisquam cumque rem in a ducimus reprehenderit!</p>
                 <div class="contact__details__container">
@@ -334,30 +332,40 @@
                         </div>
                     </div>
                 </div>
-            </article>
+            </article> -->
+            <div class="contact__content">
+                <a href="mailto:pgauchan@gmail.com">pgauchan@gmail.com</a>
+                <ul class="contact__social">
+                    <li class="contact__social__individual">
+                        <a href="https://twitter.com/pratik_gauchan" target="_blank">
+                            <i class="fab fa-twitter contact__social__twitter"></i>
+                        </a>
+                    </li>
+                    <li class="contact__social__individual">
+                        <a href="https://github.com/pgchan" target="_blank">
+                            <i class="fab fa-github contact__social__github"></i>
+                        </a>
+                    </li>
+                    <li class="contact__social__individual">
+                        <a href="https://www.linkedin.com/in/pratik-gauchan-b5165216a" target="_blank">
+                            <i class="fab fa-linkedin-in contact__social__linkedIn"></i>
+                        </a>
+                    </li>
+                    <li class="contact__social__individual">
+                        <a href="https://medium.com/@pgauchan" target="_blank">
+                            <i class="fab fa-medium contact__social__medium"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </article>
     </section>
 
-
     <footer>
         <div class="footer__inner">
-            <p>copyight &copy;2018 pratik gauchan</p>
+            <p>&copy;2018 Pratik Gauchan. Photo by Pam Lau.</p>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <script src="public/scripts/app.js"></script>
 </body>
